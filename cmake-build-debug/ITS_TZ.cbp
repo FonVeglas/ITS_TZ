@@ -34,6 +34,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DCURL_STATICLIB"/>
 					<Add directory="E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/include"/>
 					<Add directory="E:/Programming/MinGW w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="E:/Programming/MinGW w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
@@ -56,6 +57,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DCURL_STATICLIB"/>
 					<Add directory="E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/include"/>
 					<Add directory="E:/Programming/MinGW w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="E:/Programming/MinGW w64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
