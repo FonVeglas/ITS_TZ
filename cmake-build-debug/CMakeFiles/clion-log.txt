@@ -1,0 +1,7 @@
+"E:\Programming\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Programming\Projects\C++\ITS_TZ
+E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/include
+E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/lib/libcurl.dll.a
+7.78.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: E:/Programming/Projects/C++/ITS_TZ/cmake-build-debug

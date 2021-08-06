@@ -1,0 +1,3 @@
+"E:\Programming\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ITS_TZ.dir/objects.a
+"E:\Programming\MinGW w64\mingw64\bin\ar.exe" cr CMakeFiles\ITS_TZ.dir/objects.a @CMakeFiles\ITS_TZ.dir\objects1.rsp
+"E:\Programming\MinGW w64\mingw64\bin\g++.exe" -g -static -Wl,--whole-archive CMakeFiles\ITS_TZ.dir/objects.a -Wl,--no-whole-archive -o ITS_TZ.exe -Wl,--out-implib,libITS_TZ.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ITS_TZ.dir\linklibs.rsp

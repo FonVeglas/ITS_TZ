@@ -1,0 +1,1 @@
+ E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/lib/libcurl.dll.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

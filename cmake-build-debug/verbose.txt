@@ -1,0 +1,25 @@
+*   Trying 172.217.16.36:80...
+* Connected to www.google.com (172.217.16.36) port 80 (#0)
+> GET / HTTP/1.1
+Host: www.google.com
+Accept: */*
+
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Fri, 06 Aug 2021 14:22:47 GMT
+< Expires: -1
+< Cache-Control: private, max-age=0
+< Content-Type: text/html; charset=ISO-8859-1
+< P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+< Server: gws
+< X-XSS-Protection: 0
+< X-Frame-Options: SAMEORIGIN
+< Set-Cookie: 1P_JAR=2021-08-06-14; expires=Sun, 05-Sep-2021 14:22:47 GMT; path=/; domain=.google.com; Secure
+< Set-Cookie: NID=220=kc6FW7U1PiWp46TVOsvd-INAoA_KH9pPF5DG48HqG5LgyiV4pyr-rFjipMeY2iGnK5sH5RaCCcH57RM69Cw9Nn5DrifYwzgds2Htrd8ZYH3c8ahzoX77AMiyQBRTNk9_Ujxod4RWJ47xosnuL-1Ygrj8kQE5Ajvx8ubcLGtJOG0; expires=Sat, 05-Feb-2022 14:22:47 GMT; path=/; domain=.google.com; HttpOnly
+< Accept-Ranges: none
+< Vary: Accept-Encoding
+< Transfer-Encoding: chunked
+< 
+* Failure writing output to destination
+* Failed reading the chunked-encoded stream
+* Closing connection 0
