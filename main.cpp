@@ -75,20 +75,27 @@ int main(int argc, char *argv[]) {
     std::getline(dateStream, date.minutes, ':');
     std::getline(dateStream, date.seconds, ' ');
 
-    std::string dateSys = "date " + date.day + '-' + date.monthNum + '-' + date.year;
-    std::string timeSys = "time " + date.hours + ':' + date.minutes + ':' + date.seconds;
+// Windows
+//    std::string dateSys = "date " + date.day + '-' + date.monthNum + '-' + date.year;
+//    std::string timeSys = "time " + date.hours + ':' + date.minutes + ':' + date.seconds;
+//
+//    char *cStrDateSys = new char[dateSys.length()+1];
+//    strcpy(cStrDateSys, dateSys.c_str());
+//    char *cStrTimeSys = new char[timeSys.length()+1];
+//    strcpy(cStrTimeSys, timeSys.c_str());
+//    system(cStrDateSys);
+//    system(cStrTimeSys);
+//    delete[] cStrDateSys;
+//    delete[] cStrTimeSys;
 
+//Linux
+    std::string dateSys = "sudo date " + date.monthNum + date.day + date.hours + date.minutes +
+                          date.year + '.' + date.seconds;
     char *cStrDateSys = new char[dateSys.length()+1];
     strcpy(cStrDateSys, dateSys.c_str());
-    char *cStrTimeSys = new char[timeSys.length()+1];//For windows, Linux not done yet
-    strcpy(cStrTimeSys, timeSys.c_str());
-
     system(cStrDateSys);
-    system(cStrTimeSys);
     system("pause");
-
     delete[] cStrDateSys;
-    delete[] cStrTimeSys;
 
     return 0;
 }
