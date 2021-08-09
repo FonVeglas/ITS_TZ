@@ -1,11 +1,8 @@
-#define CURL_STATICLIB
-
 #include <iostream>
 #include <sstream>
 #include <fstream>
 #include <string>
 #include <curl/curl.h>
-
 
 struct Date {
     std::string day;
@@ -78,9 +75,27 @@ int main(int argc, char *argv[]) {
     std::getline(dateStream, date.minutes, ':');
     std::getline(dateStream, date.seconds, ' ');
 
+// Windows
+//    std::string dateSys = "date " + date.day + '-' + date.monthNum + '-' + date.year;
+//    std::string timeSys = "time " + date.hours + ':' + date.minutes + ':' + date.seconds;
+//
+//    char *cStrDateSys = new char[dateSys.length()+1];
+//    strcpy(cStrDateSys, dateSys.c_str());
+//    char *cStrTimeSys = new char[timeSys.length()+1];
+//    strcpy(cStrTimeSys, timeSys.c_str());
+//    system(cStrDateSys);
+//    system(cStrTimeSys);
+//    delete[] cStrDateSys;
+//    delete[] cStrTimeSys;
 
-    //system("date " + date.day + date.monthNum + date.year); //ВОТ ОНО
-    //system(dateSys); //ВОТ ОНО
-    //system("pause");
+//Linux
+    std::string dateSys = "sudo date " + date.monthNum + date.day + date.hours + date.minutes +
+                          date.year + '.' + date.seconds;
+    char *cStrDateSys = new char[dateSys.length()+1];
+    strcpy(cStrDateSys, dateSys.c_str());
+    system(cStrDateSys);
+    system("pause");
+    delete[] cStrDateSys;
+
     return 0;
 }
