@@ -11,6 +11,7 @@
 -- Check for working CXX compiler: E:/Programming/MinGW w64/mingw64/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found CURL: E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/lib/libcurl.dll.a (found version "7.78.0")  
 E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/include
 E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/lib/libcurl.dll.a
 7.78.0

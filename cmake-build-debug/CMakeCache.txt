@@ -14,9 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=E:/Programming/MinGW w64/mingw64/bin/addr2line.exe
 
@@ -42,7 +39,7 @@ CMAKE_CODEBLOCKS_MAKE_ARGUMENTS:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=E:/Programming/MinGW w64/mingw64/bin/g++.exe
+CMAKE_CXX_COMPILER:FILEPATH=E:/Programming/MinGW w64/mingw64/bin/g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -71,7 +68,7 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
 //C compiler
-CMAKE_C_COMPILER:STRING=E:/Programming/MinGW w64/mingw64/bin/gcc.exe
+CMAKE_C_COMPILER:FILEPATH=E:/Programming/MinGW w64/mingw64/bin/gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -268,12 +265,6 @@ ITS_TZ_BINARY_DIR:STATIC=E:/Programming/Projects/C++/ITS_TZ/cmake-build-debug
 //Value Computed by CMake
 ITS_TZ_SOURCE_DIR:STATIC=E:/Programming/Projects/C++/ITS_TZ
 
-//OpenGL library for win32
-OPENGL_gl_LIBRARY:STRING=opengl32
-
-//GLU library for win32
-OPENGL_glu_LIBRARY:STRING=glu32
-
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
 
@@ -454,12 +445,6 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/lib/libcurl.dll.a][E:/Programming/Projects/C++/libs/curl-7.78.0-win64-mingw/include][c ][v7.78.0()]
-//Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
-//ADVANCED property for variable: OPENGL_gl_LIBRARY
-OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENGL_glu_LIBRARY
-OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 
