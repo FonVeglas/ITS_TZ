@@ -1,12 +1,12 @@
-*   Trying 216.58.215.68:80...
-* Connected to www.google.com (216.58.215.68) port 80 (#0)
+*   Trying 172.217.16.36:80...
+* Connected to www.google.com (172.217.16.36) port 80 (#0)
 > GET / HTTP/1.1
 Host: www.google.com
 Accept: */*
 
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
-< Date: Fri, 06 Aug 2021 15:11:44 GMT
+< Date: Tue, 10 Aug 2021 12:52:34 GMT
 < Expires: -1
 < Cache-Control: private, max-age=0
 < Content-Type: text/html; charset=ISO-8859-1
@@ -14,8 +14,8 @@ Accept: */*
 < Server: gws
 < X-XSS-Protection: 0
 < X-Frame-Options: SAMEORIGIN
-< Set-Cookie: 1P_JAR=2021-08-06-15; expires=Sun, 05-Sep-2021 15:11:44 GMT; path=/; domain=.google.com; Secure
-< Set-Cookie: NID=220=A9PVOhguMWMXuwjOEqrQGDoyDoB-NI42-CRCUL89zhD9S8LEc5FVI7h1JuhpZA-0Ovn6chgevS7wgjJ0DSPMixfGR3snmvQpW4t4A-nVnDfSvBN_IwnKSp0t2PJsLiFVukMqoVcg5aYBN7vWF9mPiLNYy7xb_TBxy44YKRGF11c; expires=Sat, 05-Feb-2022 15:11:44 GMT; path=/; domain=.google.com; HttpOnly
+< Set-Cookie: 1P_JAR=2021-08-10-12; expires=Thu, 09-Sep-2021 12:52:34 GMT; path=/; domain=.google.com; Secure
+< Set-Cookie: NID=221=U-tPBX1tPWbeveJz0I7Z3P0w__MzqbpA4aIRGfZSPUQPk7YMsAyExoY8Y436mkvxDxufSKgzq5X__cWWFnwr3QmNDueiP2F6sMbVM9hYUTZeMdbFT3ENVyRSP-X6Qta05-zrruUVBG0A4coW9-ZXsfgrM593bczRwWGwCpDgS9o; expires=Wed, 09-Feb-2022 12:52:34 GMT; path=/; domain=.google.com; HttpOnly
 < Accept-Ranges: none
 < Vary: Accept-Encoding
 < Transfer-Encoding: chunked

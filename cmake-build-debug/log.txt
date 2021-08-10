@@ -1,0 +1,38 @@
+*   Trying 93.184.216.34:443...
+* Connected to example.com (93.184.216.34) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=Los Angeles; O=Internet Corporation for Assigned Names and Numbers; CN=www.example.org
+*  start date: Nov 24 00:00:00 2020 GMT
+*  expire date: Dec 25 23:59:59 2021 GMT
+*  subjectAltName: host "example.com" matched cert's "example.com"
+*  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
+*  SSL certificate verify result: self signed certificate in certificate chain (19), continuing anyway.
+* Using HTTP2, server supports multiplexing
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x75b010)
+> GET / HTTP/2
+Host: example.com
+accept: */*
+
+* old SSL session ID is stale, removing
+< HTTP/2 200 
+< age: 337923
+< cache-control: max-age=604800
+< content-type: text/html; charset=UTF-8
+< date: Tue, 10 Aug 2021 12:52:34 GMT
+< etag: "3147526947+ident"
+< expires: Tue, 17 Aug 2021 12:52:34 GMT
+< last-modified: Thu, 17 Oct 2019 07:18:26 GMT
+< server: ECS (bsa/EB17)
+< vary: Accept-Encoding
+< x-cache: HIT
+< content-length: 1256
+< 
+* Failure writing output to destination
+* stopped the pause stream!
+* Connection #0 to host example.com left intact

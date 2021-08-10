@@ -44,18 +44,31 @@ std::string MonthStringToNum(const Date &date) {
 }
 
 int main(int argc, char *argv[]) {
-    CURL *curl;
+    CURL *curl1;
+    CURL *curl2;
     CURLcode res;
-    FILE *file = fopen("verbose.txt", "w+");
-    curl = curl_easy_init();
-    if (curl) {
-        curl_easy_setopt(curl, CURLOPT_URL, "http://www.google.com");
-        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
-        curl_easy_setopt(curl, CURLOPT_STDERR, file);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, nullptr);
-        res = curl_easy_perform(curl);
-        fclose(file);
-        curl_easy_cleanup(curl);
+    FILE *file1 = fopen("verbose.txt", "w+");
+    FILE *file2 = fopen(argv[1], "w+");
+    curl1 = curl_easy_init();
+    curl2 = curl_easy_init();
+    if (curl1 && curl2) {
+        curl_easy_setopt(curl1, CURLOPT_URL, "http://www.google.com");
+        curl_easy_setopt(curl1, CURLOPT_VERBOSE, 1L);
+        curl_easy_setopt(curl1, CURLOPT_STDERR, file1);
+        curl_easy_setopt(curl1, CURLOPT_WRITEDATA, nullptr);
+
+        curl_easy_setopt(curl2, CURLOPT_URL, "https://example.com");
+        curl_easy_setopt(curl2, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_easy_setopt(curl2, CURLOPT_VERBOSE, 1L);
+        curl_easy_setopt(curl2, CURLOPT_STDERR, file2);
+        curl_easy_setopt(curl2, CURLOPT_WRITEDATA, nullptr);
+
+        res = curl_easy_perform(curl1);
+        res = curl_easy_perform(curl2);
+        fclose(file1);
+        fclose(file2);
+        curl_easy_cleanup(curl1);
+        curl_easy_cleanup(curl2);
     }
     std::fstream input("verbose.txt");
     std::stringstream dateStream;
@@ -94,8 +107,9 @@ int main(int argc, char *argv[]) {
     char *cStrDateSys = new char[dateSys.length()+1];
     strcpy(cStrDateSys, dateSys.c_str());
     system(cStrDateSys);
-    system("pause");
     delete[] cStrDateSys;
 
+
+    system("pause");
     return 0;
 }
