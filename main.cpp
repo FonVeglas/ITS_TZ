@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
     CURL *curl1;
     CURL *curl2;
     CURLcode res;
-    FILE *file1 = fopen("verbose.txt", "w+");
+    FILE *file1 = fopen("verbose", "w+");
     FILE *file2 = fopen(argv[1], "w+");
     curl1 = curl_easy_init();
     curl2 = curl_easy_init();
