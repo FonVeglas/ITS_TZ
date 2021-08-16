@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
         curl_easy_cleanup(curl1);
         curl_easy_cleanup(curl2);
     }
-    std::fstream input("verbose.txt");
+    std::fstream input("verbose");
     std::stringstream dateStream;
     std::string dateString;
     while (std::getline(input, dateString)) {
@@ -110,6 +110,6 @@ int main(int argc, char *argv[]) {
     delete[] cStrDateSys;
 
 
-    system("pause");
+
     return 0;
 }

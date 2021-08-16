@@ -14,21 +14,21 @@
 * Using HTTP2, server supports multiplexing
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
-* Using Stream ID: 1 (easy handle 0x75b010)
+* Using Stream ID: 1 (easy handle 0xe46000)
 > GET / HTTP/2
 Host: example.com
 accept: */*
 
 * old SSL session ID is stale, removing
 < HTTP/2 200 
-< age: 337923
+< age: 599133
 < cache-control: max-age=604800
 < content-type: text/html; charset=UTF-8
-< date: Tue, 10 Aug 2021 12:52:34 GMT
+< date: Mon, 16 Aug 2021 14:29:25 GMT
 < etag: "3147526947+ident"
-< expires: Tue, 17 Aug 2021 12:52:34 GMT
+< expires: Mon, 23 Aug 2021 14:29:25 GMT
 < last-modified: Thu, 17 Oct 2019 07:18:26 GMT
-< server: ECS (bsa/EB17)
+< server: ECS (bsa/EB24)
 < vary: Accept-Encoding
 < x-cache: HIT
 < content-length: 1256
